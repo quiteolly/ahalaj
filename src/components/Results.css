@@ -1,0 +1,64 @@
+.Results__header {
+	margin-bottom: 0.5em;
+}
+
+.Results__title {
+	display: inline-block;
+	font-size: 1em;
+	font-weight: normal;
+	margin: 0;
+	padding-right: 1em;
+}
+
+.Results__list {
+	list-style: none;
+	margin: 0 0 2em;
+	padding: 0;
+}
+
+.Results__list-title {
+	font-size: 1em;
+	margin: 1em 0 0.5em;
+}
+
+.Results__result {
+	border: 2px dashed var(--page-border);
+	border-radius: 1em;
+	font-size: 1.25em;
+	margin: 0 0 1em;
+	padding: 0.75em 1em 1em;
+	position: relative;
+}
+
+.Results__result--chosen {
+	background-image: linear-gradient(
+		-45deg,
+		transparent 25%,
+		rgba(255,255,255,0.25) 25%,
+		rgba(255,255,255,0.25) 50%,
+		transparent 50%,
+		transparent 75%,
+		rgba(255,255,255,0.25) 75%,
+		rgba(255,255,255,0.25) 100%
+	);
+	background-size: 2em 2em;
+	background-color: #ccc;
+	background-color: var(--picked-background, #ccc);
+	border-style: solid;
+	border-color: transparent;
+	font-size: 1.5em;
+}
+
+.Results__result-badge {
+	background-color: inherit;
+	border-radius: 0.5em;
+	font-size: 1rem;
+	margin-left: -0.5em;
+	position: absolute;
+	padding: 0 0.5em;
+	right: 1em;
+	transform: rotate(-5deg);
+	transition: background-color 0.2s;
+	top: -1em;
+	user-select: none;
+}

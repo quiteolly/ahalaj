@@ -1,0 +1,63 @@
+.App__logo {
+	font-size: 2em;
+	font-style: italic;
+	padding: 0.25em 1rem;
+	text-align: center;
+}
+
+.App__container {
+	align-items: flex-start;
+	background: var(--page-background);
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4em;
+	min-height: 100vh;
+	padding: 1em 1em 3em;
+}
+
+.App__container > :first-child {
+	flex-basis: 22em;
+	flex-grow: 1;
+}
+
+.App__container > :last-child {
+	flex-basis: 0;
+	flex-grow: 999;
+	min-width: 50%;
+}
+
+.App__form > * + * {
+	margin-top: 1.5em;
+}
+
+.App__button {
+	background: #fff;
+	border: 2px solid;
+	border-radius: 0.25em;
+	box-shadow: 4px 4px;
+	font-weight: bold;
+	padding: 0.25em 1em;
+}
+
+.App__button:hover,
+.App__button:focus {
+	background: var(--focus-background);
+	box-shadow: 2px 2px;
+	transform: translate(2px, 2px);
+}
+
+.App__button:focus {
+	box-shadow: none;
+	outline: 2px solid;
+	outline-offset: 3px;
+}
+
+.App__button--primary {
+	background: var(--primary-button-colour);
+	font-size: 1.5em;
+}
+
+.App__button--primary:hover,
+.App__button--primary:focus {
+	background: #10B981;
+}

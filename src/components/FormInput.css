@@ -1,0 +1,24 @@
+.FormInput__label {
+	display: block;
+	font-weight: bold;
+	padding: 0 0 0.25em;
+}
+
+.FormInput__input {
+	border: 2px solid var(--secondary-border);
+	border-radius: 0.25em;
+	box-shadow: inset .25em .25em 0 rgba(0, 0, 0, 0.1);
+	display: block;
+	padding: 0.5em;
+	width: 100%;
+}
+
+.FormInput__input[type="number"] {
+	width: 5em;
+}
+
+.FormInput__input:focus {
+	border-color: #000;
+	box-shadow: none;
+	outline: 4px solid var(--focus-colour);
+}
